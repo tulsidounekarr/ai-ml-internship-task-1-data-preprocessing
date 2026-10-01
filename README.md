@@ -1,12 +1,12 @@
-\# AI \& ML Internship – Task 1
+# AI \& ML Internship – Task 1
 
 
 
-\## Data Cleaning \& Preprocessing
+## Data Cleaning \& Preprocessing
 
 
 
-\## 1. Objective
+## 1. Objective
 
 
 
@@ -18,23 +18,23 @@ The Titanic dataset was used to perform missing-value handling, categorical enco
 
 
 
-\## 2. Tools Used
+## 2. Tools Used
 
 
 
-\- Python 3.13.5
+- Python 3.13.5
 
-\- Pandas 2.2.3
+- Pandas 2.2.3
 
-\- NumPy 1.26.4
+- NumPy 1.26.4
 
-\- Matplotlib 3.10.0
+- Matplotlib 3.10.0
 
-\- Scikit-learn 1.6.1
+- Scikit-learn 1.6.1
 
 
 
-\## 3. Dataset
+## 3. Dataset
 
 
 
@@ -46,9 +46,9 @@ Original dataset shape:
 
 
 
-\- 891 rows
+- 891 rows
 
-\- 12 columns
+- 12 columns
 
 
 
@@ -56,33 +56,33 @@ Original columns:
 
 
 
-\- PassengerId
+- PassengerId
 
-\- Survived
+- Survived
 
-\- Pclass
+- Pclass
 
-\- Name
+- Name
 
-\- Sex
+- Sex
 
-\- Age
+- Age
 
-\- SibSp
+- SibSp
 
-\- Parch
+- Parch
 
-\- Ticket
+- Ticket
 
-\- Fare
+- Fare
 
-\- Cabin
+- Cabin
 
-\- Embarked
+- Embarked
 
 
 
-\## 4. Data Exploration
+## 4. Data Exploration
 
 
 
@@ -90,15 +90,15 @@ The dataset was inspected for:
 
 
 
-\- Number of rows and columns
+- Number of rows and columns
 
-\- Column names
+- Column names
 
-\- Data types
+- Data types
 
-\- Missing values
+- Missing values
 
-\- Basic dataset information
+- Basic dataset information
 
 
 
@@ -118,7 +118,7 @@ Missing values found:
 
 
 
-\## 5. Missing Value Handling
+## 5. Missing Value Handling
 
 
 
@@ -126,11 +126,11 @@ The following methods were used:
 
 
 
-\- `Age` → median imputation
+- `Age` → median imputation
 
-\- `Embarked` → mode imputation
+- `Embarked` → mode imputation
 
-\- `Cabin` → replaced missing values with `Unknown`
+- `Cabin` → replaced missing values with `Unknown`
 
 
 
@@ -138,7 +138,7 @@ After cleaning, there were no missing values.
 
 
 
-\## 6. Categorical Encoding
+## 6. Categorical Encoding
 
 
 
@@ -154,11 +154,11 @@ Examples:
 
 
 
-\- `C85` → `C`
+- `C85` → `C`
 
-\- `B96` → `B`
+- `B96` → `B`
 
-\- Missing cabin → `U`
+- Missing cabin → `U`
 
 
 
@@ -170,31 +170,31 @@ Encoded features included:
 
 
 
-\- `Sex\_male`
+- `Sex\_male`
 
-\- `Embarked\_Q`
+- `Embarked\_Q`
 
-\- `Embarked\_S`
+- `Embarked\_S`
 
-\- `Deck\_B`
+- `Deck\_B`
 
-\- `Deck\_C`
+- `Deck\_C`
 
-\- `Deck\_D`
+- `Deck\_D`
 
-\- `Deck\_E`
+- `Deck\_E`
 
-\- `Deck\_F`
+- `Deck\_F`
 
-\- `Deck\_G`
+- `Deck\_G`
 
-\- `Deck\_T`
+- `Deck\_T`
 
-\- `Deck\_U`
+- `Deck\_U`
 
 
 
-\## 7. Outlier Detection and Removal
+## 7. Outlier Detection and Removal
 
 
 
@@ -206,9 +206,9 @@ The IQR (Interquartile Range) method was used on:
 
 
 
-\- `Age`
+- `Age`
 
-\- `Fare`
+- `Fare`
 
 
 
@@ -216,11 +216,11 @@ Results:
 
 
 
-\- Original rows: 891
+- Original rows: 891
 
-\- Outlier rows removed: 170
+- Outlier rows removed: 170
 
-\- Rows after outlier removal: 721
+- Rows after outlier removal: 721
 
 
 
@@ -228,13 +228,13 @@ The following boxplots were generated:
 
 
 
-\- `boxplots\_before\_outliers.png`
+- `boxplots\_before\_outliers.png`
 
-\- `boxplots\_after\_outliers.png`
+- `boxplots\_after\_outliers.png`
 
 
 
-\## 8. Feature Standardization
+## 8. Feature Standardization
 
 
 
@@ -242,15 +242,15 @@ The following numerical features were standardized using `StandardScaler`:
 
 
 
-\- `Age`
+- `Age`
 
-\- `Fare`
+- `Fare`
 
-\- `SibSp`
+- `SibSp`
 
-\- `Parch`
+- `Parch`
 
-\- `Pclass`
+- `Pclass`
 
 
 
@@ -258,7 +258,7 @@ After standardization, the means of these features were approximately zero.
 
 
 
-\## 9. Final Dataset
+## 9. Final Dataset
 
 
 
@@ -274,9 +274,9 @@ Final dataset shape:
 
 
 
-\- 721 rows
+- 721 rows
 
-\- 18 columns
+- 18 columns
 
 
 
@@ -284,15 +284,15 @@ Final checks:
 
 
 
-\- Missing values: 0
+- Missing values: 0
 
-\- Categorical features converted to numerical values
+- Categorical features converted to numerical values
 
-\- Numerical features standardized
+- Numerical features standardized
 
 
 
-\## 10. Project Structure
+## 10. Project Structure
 
 
 
@@ -340,7 +340,7 @@ Task-1/
 
 
 
-\## 11. Conclusion
+## 11. Conclusion
 
 
 
